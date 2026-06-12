@@ -395,6 +395,9 @@ footer a:hover { color: #fff; }
       <h3>Training data and splits</h3>
       <ul class="content-list">
         <li>We provide a small train set which is representative of the test set. Further, participants may train on any publicly available perturbation datasets (e.g., <em>PerturbQA</em> and other public resources).</li>
+        <ul>
+          <li>Update June 12 2026: Due to a preprint release, there has been possible data leakage. Training on this data is not allowed. This is already covered by our “good-faith policy”, but we want to make this clear. We will strictly enforce this by requiring top submissions from after May 28th to share their setup in order to be considered valid and to receive prizes.</li>
+        </ul>
         <li>We provide an online leaderboard which shows predictions on a <strong>public</strong> portion of the test set drawn from the same experimental pipeline as the rest of the data.</li>
         <li>At the end of the competition, the <strong>private</strong> test set scores will be released. Final rankings are determined on the held-out private test set.</li>
       </ul>
@@ -437,6 +440,9 @@ footer a:hover { color: #fff; }
     <div class="prose">
       <p>It is permissible to submit continuous probability values as predictions instead of 1 or 0.</p>
       <p>Top-performing teams&rsquo; solutions (Top 5) will undergo <strong>manual assessment</strong> by domain experts and LLM agents. This serves as a validity check to identify and disqualify models that may engage in metric hacking.</p>
+      <ul>
+        <li>Update June 12 2026: Due to the data leakage mentioned above, we will be requiring winning submissions after May 28th to share their full codebase. </li>
+      </ul>
     </div>
   </div>
 </section>
