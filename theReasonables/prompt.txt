@@ -1,0 +1,1 @@
+"You are an expert molecular biologist. If you knockdown Acin1 using CRISPRi in mouse BMDMs, what is the effect on Fgl2? Answer A (up), B (down), or C (no effect)."
