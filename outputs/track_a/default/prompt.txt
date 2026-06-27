@@ -11,4 +11,4 @@ A) Knockdown of {pert} results in up-regulation of {gene}.
 B) Knockdown of {pert} results in down-regulation of {gene}.
 C) Knockdown of {pert} does not significantly affect {gene}.
 
-Answer:
+Answer:B
