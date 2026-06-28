@@ -17,3 +17,4 @@ outputs/finetuned_model/
 debug_api.py
 
 theReasonables/config.txt
+theReasonables/venv/

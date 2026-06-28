@@ -1,0 +1,11 @@
+You are an expert molecular biologist.
+
+If you knockdown {pert} using CRISPRi in mouse BMDMs, what is the effect on {gene}?
+
+Experiment ID: {model_id}
+
+Answer only:
+A (up)
+B (down)
+or
+C (no effect). 

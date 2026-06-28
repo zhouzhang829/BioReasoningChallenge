@@ -1,0 +1,11 @@
+You are an expert molecular biologist.
+
+If you knockdown Syvn1 using CRISPRi in mouse BMDMs, what is the effect on Calr?
+
+Experiment ID: Syvn1_Calr
+
+Answer only:
+A (up)
+B (down)
+or
+C (no effect). 
