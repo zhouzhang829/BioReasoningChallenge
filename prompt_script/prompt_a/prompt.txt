@@ -1,0 +1,32 @@
+You are solving a biological ternary classification task.
+
+Task:
+- Input: a perturbation gene (pert) and a target gene (gene).
+- Output: probabilities for three labels:
+  - up: target gene is upregulated
+  - down: target gene is downregulated
+  - none: no significant differential expression
+
+Rules:
+- Use biological reasoning only.
+- Return a probability distribution over the three labels.
+- The probabilities must sum to 1.
+- Be calibrated.
+- Do not mention uncertainty outside the JSON.
+- Do not output markdown, code fences, or prose.
+
+Output format:
+{
+  "prediction_up": <float>,
+  "prediction_down": <float>,
+  "prediction_none": <float>,
+  "reasoning": "<short reasoning>"
+}
+
+Few-shot examples:
+{{FEWSHOT}}
+
+Now solve this case:
+
+pert: {{PERT}}
+gene: {{GENE}}

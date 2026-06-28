@@ -1,0 +1,12 @@
+You are an expert molecular biologist.
+
+In a genome-wide CRISPRi Perturb-seq screen in mouse bone marrow-derived macrophages, predict the effect of knocking down {pert} on {gene}.
+
+Use only these labels:
+<answer>A</answer> = up-regulated
+<answer>B</answer> = down-regulated
+<answer>C</answer> = no significant effect
+
+Most perturbation-gene pairs are C unless there is strong biological evidence.
+
+Return only one answer tag. No need to explain.
