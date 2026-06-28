@@ -5,6 +5,25 @@ Prompt templates adapted from PerturbQA (https://github.com/Genentech/PerturbQA)
 
 Each (pert, gene) pair receives a single ternary question:
   A) Upregulated  B) Downregulated  C) No significant effect
+
+FUNCTION:
+from mlgenx import format_prompt, format_prompts_from_csv
+
+# zero-shot prompt for one (pert, gene) pair
+prompt = format_prompt("Psmd4", "Anxa2")
+
+# few-shot prompt with labelled examples
+prompt = format_prompt(
+    "Psmd4", "Anxa2",
+    examples=[
+        {"pert": "Cul2", "gene": "Upp1", "label": "none"},
+        {"pert": "Dusp1", "gene": "Chst11", "label": "up"},
+    ],
+)
+
+# prompts for every row in train.csv or test.csv
+prompts_df = format_prompts_from_csv("data/test.csv")
+prompts_df.to_csv("outputs/prompts.csv", index=False)
 """
 
 from __future__ import annotations

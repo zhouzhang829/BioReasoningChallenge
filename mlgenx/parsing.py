@@ -3,6 +3,25 @@ Parse LLM text outputs into numeric predictions for the PerturbPair competition.
 
 Handles ternary responses: A) Up, B) Down, C) None.
 Returns (prediction_up, prediction_down) tuples.
+
+FUNCTION:
+from mlgenx import parse_answer, parse_answers, build_submission
+
+# single LLM response -> (prediction_up, prediction_down)
+pred_up, pred_down = parse_answer("A) Knockdown of X results in up-regulation of Y.")
+
+# batch of responses
+preds = parse_answers(["A) up-regulation", "B) down-regulation", "C) no significant effect"])
+
+# build submission CSV from ids and predictions
+import pandas as pd
+test_df = pd.read_csv("data/test.csv")
+df = build_submission(
+    ids=test_df["id"].tolist(),
+    predictions_up=[p[0] for p in preds],
+    predictions_down=[p[1] for p in preds],
+    output_path="outputs/submission.csv",
+)
 """
 
 from __future__ import annotations
